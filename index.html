@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Eletronic Voting</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="grid-child-title">
+        <h1>
+          Polling Day! <br />
+          Vote for the next Leaders of The Universe 🌏
+        </h1>
+      </div>
+      <div class="grid-child ballot">
+        <div class="ballot-box">
+          <div class="display">
+            <!-- Parte esquerda do ecra -->
+            <div class="part-1">
+              <div class="part-1-left">
+                <div class="part-1-1">
+                  <span>Your vote for:</span>
+                </div>
+                <div class="part-1-2">
+                  <span>PRESIDENT OF THE UNIVERSE</span>
+                </div>
+                <div class="part-1-3">
+                  <div class="number twinkle"></div>
+                  <div class="number"></div>
+                </div>
+                <div class="part-1-4">
+                  Candidate: XXX <br />
+                  Planet: YYY <br />Vice-President: ZZZ
+                </div>
+                <!-- parte de baixo do ecra, só contem informações de uso -->
+                <div class="part-1-in-part2">
+                  How it works: <br />
+                  Click CONFIRM to confirm this vote <br />
+                  Click RECTIFY to restart this vote <br />
+                  Vote BLANK without enter any number
+                </div>
+              </div>
+              <!-- parte direita do ecra, contem as fotos dos candidatos -->
+              <div class="part-1-right">
+                <div class="part-1-image">
+                  <img src="/images/groot.jpeg" alt="" />
+                  President
+                </div>
+                <div class="part-1-image small">
+                  <img src="/images/rocket-raccoon.jpeg" alt="" />
+                  Vice-President
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Teclado -->
+          <div class="keyboard">
+            <div class="keyboard-line">
+              <div class="keyboard-button" onclick="clicked('1')">1</div>
+              <div class="keyboard-button" onclick="clicked('2')">2</div>
+              <div class="keyboard-button" onclick="clicked('3')">3</div>
+            </div>
+            <div class="keyboard-line">
+              <div class="keyboard-button" onclick="clicked('4')">4</div>
+              <div class="keyboard-button" onclick="clicked('5')">5</div>
+              <div class="keyboard-button" onclick="clicked('6')">6</div>
+            </div>
+            <div class="keyboard-line">
+              <div class="keyboard-button" onclick="clicked('7')">7</div>
+              <div class="keyboard-button" onclick="clicked('8')">8</div>
+              <div class="keyboard-button" onclick="clicked('9')">9</div>
+            </div>
+            <div class="keyboard-line">
+              <div class="keyboard-button" onclick="clicked('0')">0</div>
+            </div>
+            <!-- Botões de ação do teclado -->
+            <div class="keyboard-line">
+              <div class="keyboard-button btn-blank" onclick="blank()">
+                BLANK
+              </div>
+              <div class="keyboard-button btn-rectify" onclick="rectify()">
+                RECTIFY
+              </div>
+              <div class="keyboard-button btn-confirm" onclick="confirme()">
+                CONFIRM
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FALTA LEGENDA PARA OS CODIGOS DOS CANDIDATOS -->
+    <script src="superheroes.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
